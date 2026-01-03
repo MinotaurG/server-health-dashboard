@@ -15,12 +15,12 @@ A real-time terminal dashboard that monitors server health metrics built with Ba
 
 ## Screenshot
 ╔══════════════════════════════════════════════════════════════╗
-║ 🖥️ SERVER HEALTH DASHBOARD ║
+║ 🖥️ SERVER HEALTH DASHBOARD ║                                  
 ╠══════════════════════════════════════════════════════════════╣
-║ 📍 Host: my-server ║
-║ 🔥 CPU: 4 cores, Load: 0.52, 0.48, 0.45 ● ║
-║ 🧠 Memory: 2.7Gi / 7.6Gi (35%) ● ║
-║ 💾 Disk: 16G / 1007G (2%) ● ║
+║ 📍 Host: my-server                                           ║
+║ 🔥 CPU: 4 cores, Load: 0.52, 0.48, 0.45 ●                    ║ 
+║ 🧠 Memory: 2.7Gi / 7.6Gi (35%) ●                             ║
+║ 💾 Disk: 16G / 1007G (2%) ●                                  ║
 ╚══════════════════════════════════════════════════════════════╝
 
 
@@ -34,21 +34,27 @@ A real-time terminal dashboard that monitors server health metrics built with Ba
 ## Installation
 
 # Clone the repository
+```bash
 git clone git@github.com:YOUR_USERNAME/server-health-dashboard.git
-
+```
 # Navigate to directory
+```bash
 cd server-health-dashboard
-
+```
 # Make script executable
+```bash
 chmod +x dashboard.sh
-
+```
 # Run the dashboard
+```bash
 ./dashboard.sh
-Usage
+```
+#Usage
 
 # Run with default 5-second refresh
+```bash
 ./dashboard.sh
-
+```
 # Press Ctrl+C to exit
 ## How It Works
 
@@ -84,7 +90,7 @@ The dashboard uses standard Linux commands to gather system metrics:
 
 ## Author
 
-Your Name - Built as part of Support Engineer interview preparation
+MinotaurG
 
 ## License
 
