@@ -49,12 +49,7 @@ chmod +x dashboard.sh
 ```bash
 ./dashboard.sh
 ```
-#Usage
 
-# Run with default 5-second refresh
-```bash
-./dashboard.sh
-```
 # Press Ctrl+C to exit
 ## How It Works
 
