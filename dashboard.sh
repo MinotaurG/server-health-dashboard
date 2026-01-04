@@ -63,10 +63,10 @@ show_dashboard() {
     MEM_STATUS=$(get_status $MEM_PERCENT)
 
     # Disk information
-    DISK_TOTAL=$(df -h / | awk 'NR==2 {print $2}')
-    DISK_USED=$(df -h / | awk 'NR==2 {print $3}')
-    DISK_AVAILABLE=$(df -h / | awk 'NR==2 {print $4}')
-    DISK_PERCENT=$(df -h / | awk 'NR==2 {print $5}' | tr -d '%')
+    DISK_TOTAL=$(df -h /mnt/c | awk 'NR==2 {print $2}')
+    DISK_USED=$(df -h /mnt/c | awk 'NR==2 {print $3}')
+    DISK_AVAILABLE=$(df -h /mnt/c | awk 'NR==2 {print $4}')
+    DISK_PERCENT=$(df -h /mnt/c | awk 'NR==2 {print $5}' | tr -d '%')
     DISK_STATUS=$(get_status $DISK_PERCENT 70 85)
 
     # Process count
@@ -97,7 +97,7 @@ show_dashboard() {
     echo -e "${CYAN}║${NC}     Available: $MEM_AVAILABLE"
     echo -e "${CYAN}║${NC}     Swap: $SWAP_USED / $SWAP_TOTAL"
     echo -e "${CYAN}╠══════════════════════════════════════════════════════════════╣${NC}"
-    echo -e "${CYAN}║${NC}  💾 DISK (/)                                          $DISK_STATUS"
+    echo -e "${CYAN}║${NC}  💾 DISK (C:)                                          $DISK_STATUS"
     echo -e "${CYAN}║${NC}     Used: $DISK_USED / $DISK_TOTAL (${DISK_PERCENT}%)"
     echo -e "${CYAN}║${NC}     Available: $DISK_AVAILABLE"
     echo -e "${CYAN}╠══════════════════════════════════════════════════════════════╣${NC}"
